@@ -331,3 +331,193 @@ body {
     opacity: 1;
 }
 
+/* MEDIA QUERIES *****************************************/
+
+/* TABLETS */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: auto;
+    }
+
+    #logo {
+        width: 100px;
+        margin-top: 5px;
+    }
+
+    header nav {
+        margin-top: 0;
+    }
+
+    header nav ul li {
+        font-size: 12px;
+        padding-top: 0;
+    }
+
+    #home h1 {
+        font-size: 90px;
+        margin-top: 200px;
+    }
+
+    #MBD {
+        width: 80%;
+    }
+
+    #infotext {
+        width: 35%;
+    }
+    
+    #MBDD{
+        width: 30%;
+    }
+
+    #contact {
+        width: 40%;
+    }
+
+    #botton {
+        width: 85%;
+    }
+}
+
+/* MOBILES */
+
+@media screen and (max-width: 549px) {
+
+    html, body {
+        width: 100%;
+    }
+
+    #logo {
+        width: 90px;
+        margin-left: 15px;
+    }
+
+    header nav {
+        margin: 0;
+        float:none;
+    }
+
+    .fa-bars {
+        display: inline-block;
+        width: 5%;
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        margin: 1% 2% 0 0;
+    }
+
+    .fa-bars:hover {
+        opacity: 0.5;
+    }
+
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .open {
+        height: auto;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        font-size: 11px;
+        border-top:  1px solid #dddddd;
+    }
+
+    header nav ul li:hover {
+        background-color: #eeeeee;
+    }
+
+    #homehr{
+        margin: 0;
+        padding: 0;
+    }
+
+    #home h1 {
+        font-size: 50px;
+        margin-top: 200px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #home h2 {
+        font-size: 20px;
+
+    }
+
+    #produkte h3 {
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    #MBD {
+        width: 100%;
+        padding-left: 5px;
+    }
+
+    #produkte {
+        padding: 50px;
+    }
+
+    #produkthead {
+        margin: 0 auto 0 auto;
+        text-align: center;
+        padding: 0 0 0 35%;
+    }
+
+    #MBD img {
+        width: 90%;
+        margin: 0 auto 0 auto;
+        padding: 0 0 0 3%;
+    }
+
+    #produkthead1 {
+        margin: 0 auto 0 auto;
+        font-size: 21px;
+        
+    }
+
+    #infotext {
+        padding: 0;
+        width: 100%;
+        font-size: 11px;
+    }
+
+    #prise {
+        height: 0;
+    }
+
+    #downloads h3 {
+        font-size: 25px;
+    }
+
+    #MBDD {
+        width: 67%;
+    }
+
+    #kontakt h3 {
+        font-size: 25px;
+    }
+
+    #contact {
+        width: 80%;
+    }
+    #home img{
+        width: 40%;
+        margin-top: 160px;
+        opacity: 1.0;
+    }
+    header{
+        width: 100%;
+    }
+}

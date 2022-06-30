@@ -1,5 +1,9 @@
 // Google
-
+$(document).ready(function() {
+  $(".fa-bars").on("click", function() {
+      $("header nav ul").toggleClass("open");
+  });
+});
 
 function myFunction() {
     alert("Page is loaded");
