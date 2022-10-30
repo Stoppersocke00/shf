@@ -1,112 +1,70 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css\style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="..\img\favicon.ico">
-    <link rel="shortcut icon" href="img\favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
-    <link rel="apple-touch-icon" sizes="180x180" href="img\favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img\favicon.png">
-    <title>PS Altersbestätigung</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name='descripton' content='Personalausweisnummern-Generator, Personalausweis Generator, Perso Generator, Ausweis Generator, Perso, xyz'>
-	<meta name='keywords' content='Personalausweisnummern-Generator, Ausweis Generator, Perso Generator, Ausweis Generator, Perso, xyz, Perso.xyz, Personalausweis, Personalausweisnummer, legal, kostenlos, free, games, spiele, g4k, mmoga, origin, steam, onlinekeystore'>
-	<meta name='author' content='JanFxtw'>
-	<link rel='shortcut icon' href='css/favicon.ico'/>
-	<link rel='stylesheet' type='text/css' href='css/style.css'>
-	<script src="js/perso_calc.js"></script>
-</head>
-<body onload="rand(document.pa.ewk,4); rand(document.pa.lfd,5); ">
+<!Doctype html>
+<html>
+	<head>
+		<title>PS Altersbestätigung</title>
 
-    <!-- HEADER ---------------------------------------->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <meta name='descripton' content='Personalausweisnummern-Generator, Personalausweis Generator, Perso Generator, Ausweis Generator, Perso, xyz'>
+	  <meta name='keywords' content='Personalausweisnummern-Generator, Ausweis Generator, Perso Generator, Ausweis Generator, Perso, xyz, Perso.xyz, Personalausweis, Personalausweisnummer, legal, kostenlos, free, games, spiele, g4k, mmoga, origin, steam, onlinekeystore'>
+	  <meta name='author' content='JanFxtw'>
+	  <link rel='shortcut icon' href='css/favicon.ico'/>
+	  <link rel='stylesheet' type='text/css' href='css/style.css'>
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55536999-1"></script>
+		<!-- Generate JS -->
+		<script src="js/perso_calc.js"></script>
 
-    <header>
-        <div id="logo">
-            <a href="index.html">
-                <img src="..\img\text-logo.png" alt="Logo">
-            </a>
-        </div>
 
-        <nav id="main-nav">
-            <img class="fa-bars" src="../img/bars-solid.svg">
-            <ul>
-                <a href="..\index.html#home"><li>Startseite</li></a>
-                <a href="..\index.html#tools"><li>Tools</li></a>
-                <a href="..\index.html#downloads"><li>Downloads</li></a>
-                <a href="..\index.html#fun"><li>Fun Stuff</li></a>
-                <a href="..\index.html#news"><li>News</li></a>
-                <a href="..\index.html#social"><li>Social</li></a>
-            </ul>
-        </nav>
-    </header>
+			</head>
+	<body onload="rand(document.pa.ewk,4); rand(document.pa.lfd,5); ">
 
-    <section id="tools">
-        <center>
-        <div class='content-box'>
-            <FORM name='pa'>
-                <h3>Playstation Altersbestätigung</h3>
-                <hr>
-                <div id="tool-box">
-                    <br>
-                <TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
-                    <TR><TD><label id="gebdatlabel">Geburtsdatum: </label><br></TD></TR>
-                    <TR><TD><label>Block 1 </label><input type='text' class='inp1' size='10' maxlength='10' name='p1' readonly><br></TD></TR>
-                    <TR><TD><label>Block 2 </label><input type='text' class='inp3' size='7'  maxlength='7' 	name='p3' readonly><br></TD></TR>
-                    <TR><TD><label>Block 3 </label><input type='text' class='inp4' size='7'  maxlength='7' 	name='p4' readonly><br></TD></TR>
-                    <TR><TD><label>Block 4 </label><input type='text' class='inp5' size='1'  maxlength='1' 	name='p5' readonly></p></TD></TR>
-                </TABLE>
-              
-                <TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
-                    <TR><TD ALIGN='left'>Alter</TD><TD>
-                        
-                        <input type='button' class='push' value='Auswahl' onClick='RandDOB(document.pa.geb);'></TD></TR>
-                    <TR><TD ALIGN='left'>Ablaufdatum</TD><TD>
-                        
-                        <input type='button' class='push' value='Auswahl' onClick='RandDOE(document.pa.abl);'></TD></TR>
-        
-                </TABLE>
-                <p><input type='button' class='green' value='Generieren' onClick='generate(); gebdat();'>
-                <input type='button' class='yellow' value='Überfrüfen' onClick='check();'>
-                <input type='button' class='red' value='Reset' onClick='clearInp(); rand(document.pa.ewk,4); rand(document.pa.lfd,5);'></p>
-                <input type="button" class='hidden' value="Generate Direct" onClick='generateDirect();'>
-        
-                <p>
-                    Vers. 22.4 © 2022 by <a href='https://stoppersocke00.github.io/SLE'>Stoppersocke</a><br>
-                </p>
-            </div>
-		<div class='hidden'> <!-- https://www.counter-zaehler.de/de/home/stats/id/976197 -->
-			<a href='https://www.studentenversicherung.at/'>Studentenversicherung.at</a> <script type='text/javascript' src='https://www.fast-counter.net/auth.php?id=a49b63b96b69f19f3de26f1fb1d722daee4aeb9c'></script>
-			<script type="text/javascript" src="https://www.fastcounter.net/de/home/counter/976197/t/4"></script>
-		</div>
-                <input type='text' class='hidden' size=6 maxlength=6 name='geb'>
-                <input type='text' class='hidden' size=6 maxlength=6 name='abl'>
-                <TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
-                <TR class="hidden"><TD ALIGN='right'>Wohnsitz Kenn.:</TD><TD>
-                         <input type='text' class='inp' size=4 maxlength=4 name='ewk'>
-                          <input type='button' class='push' value='Zufall' onClick='rand(document.pa.ewk,4);'></TD></TR>
-                <TR class="hidden"><TD ALIGN='left'>laufende Zahl:</TD><TD>
-                         <input type='text' class='inp' size=5 maxlength=5 name='lfd'>
-                          <input type='button' class='push' value='Zufall' onClick='rand(document.pa.lfd,5);'></TD></TR>
-                        <TR class="hidden"><TD ALIGN='left'>Nationalit&auml;t:</TD><TD>
-                          <input type='text' class='inp' size=1 maxlength=1 name='nat' value='D'></TD></TR>
-                    </TABLE>
-                    <input type='text' class='inp2' size='1'  maxlength='1' 	name='p2' value='D' readonly>
-                
-            </FORM>
-        </div>
-        </center>
+<center>
+<div class='content-box'>
+	<FORM name='pa'>
+		<h1>Playstation Altersbestätigung</h1>
+		<!--<p></p>-->
 
-    </section>
-	
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="../js/mobile-menu.js"></script>
+        <TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
+            <TR><TD><label id="gebdatlabel">Geburtsdatum: </label><br></TD></TR>
+            <TR><TD><label>Block 1 </label><input type='text' class='inp1' size='10' maxlength='10' name='p1' readonly><br></TD></TR>
+            <TR><TD><label>Block 2 </label><input type='text' class='inp3' size='7'  maxlength='7' 	name='p3' readonly><br></TD></TR>
+            <TR><TD><label>Block 3 </label><input type='text' class='inp4' size='7'  maxlength='7' 	name='p4' readonly><br></TD></TR>
+            <TR><TD><label>Block 4 </label><input type='text' class='inp5' size='1'  maxlength='1' 	name='p5' readonly></p></TD></TR>
+        </TABLE>
+	  
+		<TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
+            <TR><TD ALIGN='left'>Alter</TD><TD>
+            	
+                <input type='button' class='push' value='Auswahl' onClick='RandDOB(document.pa.geb);'></TD></TR>
+			<TR><TD ALIGN='left'>Ablaufdatum</TD><TD>
+            	
+                <input type='button' class='push' value='Auswahl' onClick='RandDOE(document.pa.abl);'></TD></TR>
 
+		</TABLE>
+		<p><input type='button' class='green' value='Generate' onClick='generate(); gebdat();'>
+        <input type='button' class='yellow' value='Check' onClick='check();'>
+		<input type='button' class='red' value='Reset' onClick='clearInp(); rand(document.pa.ewk,4); rand(document.pa.lfd,5);'></p>
+        <input type="button" class='hidden' value="Generate Direct" onClick='generateDirect();'>
+
+		<p>
+			© 2022 by <a href='https://stoppersocke00.github.io/SLE'>Stoppersocke</a><br>
+		</p>
+        <input type='text' class='hidden' size=6 maxlength=6 name='geb'>
+        <input type='text' class='hidden' size=6 maxlength=6 name='abl'>
+        <TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
+        <TR class="hidden"><TD ALIGN='right'>Wohnsitz Kenn.:</TD><TD>
+         		<input type='text' class='inp' size=4 maxlength=4 name='ewk'>
+              	<input type='button' class='push' value='Zufall' onClick='rand(document.pa.ewk,4);'></TD></TR>
+        <TR class="hidden"><TD ALIGN='left'>laufende Zahl:</TD><TD>
+             	<input type='text' class='inp' size=5 maxlength=5 name='lfd'>
+              	<input type='button' class='push' value='Zufall' onClick='rand(document.pa.lfd,5);'></TD></TR>
+                <TR class="hidden"><TD ALIGN='left'>Nationalit&auml;t:</TD><TD>
+              	<input type='text' class='inp' size=1 maxlength=1 name='nat' value='D'></TD></TR>
+            </TABLE>
+            <input type='text' class='inp2' size='1'  maxlength='1' 	name='p2' value='D' readonly>
+		
+	</FORM>
+</div>
+</center>
 </body>
 </html>
