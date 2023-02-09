@@ -205,6 +205,14 @@ header nav ul li {
     background-attachment: fixed;
 }
 
+#news-box{
+    width: auto;
+    margin: 0 auto 0 auto;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 2em;
+    background-color: #fff;
+}
+
 /*SOCIAL*****************************/
 
 #social {
@@ -213,6 +221,14 @@ header nav ul li {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+#social-box{
+    width: auto;
+    margin: 0 auto 0 auto;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 2em;
+    background-color: #fff;
 }
 
 /*PRODUKTE***************************/
