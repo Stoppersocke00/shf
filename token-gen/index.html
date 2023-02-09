@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KM3WSL2S2"></script>
+    <script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+	    gtag('config', 'G-6KM3WSL2S2');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="..\img\favicon.ico">
+    <link rel="shortcut icon" href="img\favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
+    <link rel="apple-touch-icon" sizes="180x180" href="img\favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img\favicon.png">
+    <title>PS Altersbestätigung</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name='descripton' content='Personalausweisnummern-Generator, Personalausweis Generator, Perso Generator, Ausweis Generator, Perso, xyz'>
+	<meta name='keywords' content='Personalausweisnummern-Generator, Ausweis Generator, Perso Generator, Ausweis Generator, Perso, xyz, Perso.xyz, Personalausweis, Personalausweisnummer, legal, kostenlos, free, games, spiele, g4k, mmoga, origin, steam, onlinekeystore'>
+	<meta name='author' content='JanFxtw'>
+	<link rel='shortcut icon' href='css/favicon.ico'/>
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+	<script src="js/perso_calc.js"></script>
+</head>
+<body onload="rand(document.pa.ewk,4); rand(document.pa.lfd,5); ">
+
+    <!-- HEADER ---------------------------------------->
+
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="..\img\text-logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <nav id="main-nav">
+            <img class="fa-bars" src="../img/bars-solid.svg">
+            <ul>
+                <a href="..\index.html#home"><li>Startseite</li></a>
+                <a href="..\index.html#tools"><li>Tools</li></a>
+                <a href="..\index.html#downloads"><li>Downloads</li></a>
+                <a href="..\index.html#fun"><li>Fun Stuff</li></a>
+                <a href="..\index.html#news"><li>News</li></a>
+                <a href="..\index.html#social"><li>Social</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tools">
+        <center>
+        <div class='content-box'>
+            <FORM name='pa'>
+                <h3>Playstation Altersbestätigung</h3>
+                <hr>
+                <div id="tool-box">
+                    <br>
+                <TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
+                    <TR><TD><label id="gebdatlabel">Geburtsdatum: </label><br></TD></TR>
+                    <TR><TD><label>Block 1 </label><input type='text' class='inp1' size='11' maxlength='11' name='p1' readonly><br></TD></TR>
+                    <TR><TD><label>Block 2 </label><input type='text' class='inp3' size='7'  maxlength='7' 	name='p3' readonly><br></TD></TR>
+                    <TR><TD><label>Block 3 </label><input type='text' class='inp4' size='7'  maxlength='7' 	name='p4' readonly><br></TD></TR>
+                    <TR><TD><label>Block 4 </label><input type='text' class='inp5' size='1'  maxlength='1' 	name='p5' readonly></p></TD></TR>
+                </TABLE>
+              
+                <TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
+                    <TR><TD ALIGN='left'>Alter</TD><TD>
+                        
+                        <input type='button' class='push' value='Auswahl' onClick='RandDOB(document.pa.geb);'></TD></TR>
+                    <TR><TD ALIGN='left'>Ablaufdatum</TD><TD>
+                        
+                        <input type='button' class='push' value='Auswahl' onClick='RandDOE(document.pa.abl);'></TD></TR>
+        
+                </TABLE>
+                <p><input type='button' class='green' value='Generieren' onClick='generate(); gebdat();'>
+                <input type='button' class='yellow' value='Überfrüfen' onClick='check();'>
+                <input type='button' class='red' value='Reset' onClick='clearInp(); rand(document.pa.ewk,4); rand(document.pa.lfd,5);'></p>
+                <input type="button" class='hidden' value="Generate Direct" onClick='generateDirect();'>
+        	<a href='https://www.youtube.com/channel/UCJn1B_ltzGq16J7AusGNs0Q'>Follow me on YouTube</a><br>
+                <p>
+                   Vers. 22.6 © 2022 by <a href='https://www.youtube.com/channel/UCJn1B_ltzGq16J7AusGNs0Q'>Stoppersocke</a><br>
+                </p>
+            </div>
+                <input type='text' class='hidden' size=6 maxlength=6 name='geb'>
+                <input type='text' class='hidden' size=6 maxlength=6 name='abl'>
+                <TABLE BORDER='0' CELLPADDING='0' CELLSPACING='5'>
+                <TR class="hidden"><TD ALIGN='right'>Wohnsitz Kenn.:</TD><TD>
+                         <input type='text' class='inp' size=4 maxlength=4 name='ewk'>
+                          <input type='button' class='push' value='Zufall' onClick='rand(document.pa.ewk,4);'></TD></TR>
+                <TR class="hidden"><TD ALIGN='left'>laufende Zahl:</TD><TD>
+                         <input type='text' class='inp' size=5 maxlength=5 name='lfd'>
+                          <input type='button' class='push' value='Zufall' onClick='rand(document.pa.lfd,5);'></TD></TR>
+                        <TR class="hidden"><TD ALIGN='left'>Nationalit&auml;t:</TD><TD>
+                          <input type='text' class='inp' size=1 maxlength=1 name='nat' value='D'></TD></TR>
+                    </TABLE>
+                    <input type='text' class='inp2' size='1'  maxlength='1' 	name='p2' value='D' readonly>
+                
+            </FORM>
+        </div>
+        </center>
+
+    </section>
+    
+
+    
+
+
+    <script src="../js/mobile-menu.js"></script>
+    <script type="text/javascript" src="https://www.fastcounter.net/de/home/counter/976197/t/4"></script>
+
+</body>
+</html>

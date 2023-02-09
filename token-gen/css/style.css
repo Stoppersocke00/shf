@@ -1,0 +1,523 @@
+body 			{font-family:"Myriad Pro","Gill Sans","Gill Sans MT",Calibri,sans-serif;color:#363636;background:#FBFBFB;}
+h1 			{font-size: 25px;line-height: 200%;}
+input 			{background-color:#FFFFFF;border:1px solid;border-radius:2.5px;height:20px;;border-color:#4D4D4D;}
+
+.content-box 		{margin:25px;padding:0px;}
+.push:hover 		{border-color:#C4C4C4;}
+.green:hover		{border-color:#23B078;}
+.yellow:hover		{border-color:#D1D143;}
+.red:hover		  {border-color:#CF5F5F;}
+.blue:hover     {border-color:#5CA7F2;}
+.inp1           {width:77px;}
+.inp2,.inp5     {width:10px;}
+.inp3,.inp4     {width:60px;}
+.hidden    {visibility: hidden;}
+.inp2 {visibility: hidden;}
+
+#idx 			        {border: 3px solid #fff; width: 100% }
+#idx td.center 		{text-align: center; }
+#idx td 		      {border-bottom: 1px solid #f0f0f0; }
+#idx img          {margin-bottom: -2px; }
+#idx table        {color: #606060; width: 100%; margin-top:3px; }
+#idx span.link 		{color: #0066DF; cursor: pointer; }
+#idx .rounded 		{padding: 10px 7px 10px 10px; -moz-border-radius:6px; }
+#idx .gray        {background-color:#fafafa;border-bottom: 1px solid #e5e5e5; }
+#idx p 			      {padding: 0px; margin: 0px;line-height:1.4em;}
+#idx p.left 		  {float:left;width:60%;padding:3px;color:#606060;}
+#idx p.right      {float:right;width:35%;text-align:right;color:#707070;padding:3px;}
+#idx strong       {font-family: "Trebuchet MS", tahoma, arial; font-size: 1.2em; font-weight: bold; color: #202020; padding-bottom: 3px; margin: 0px; }
+#idx a:link    		{color: #0066CC; }
+#idx a:visited 		{color: #003366; }
+#idx a:hover   		{text-decoration: none; }
+#idx a:active  		{color: #9DCC00; }
+
+/* HOME *****************************/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+::-webkit-input-placeholder {color: #999999;}
+::-moz-placeholder {color: #999999;}
+:-ms-input-placeholder {color: #999999;}
+:-moz-placeholder {color: #999999;}
+
+section {
+    min-height: 100%;
+    scroll-snap-align: start;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, #home a, #main-nav ul a li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #494949;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+h2 {
+    color: #5d7177;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+h4, p {
+    font-family: 'Roboto Slab', serif;
+    color: #494949;
+}
+
+hr {
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+#section-header {
+    margin-top: 0;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+
+li, #logo, img, body, #botton, .fa-bars, .open{transition: all 300ms; -webkit-transition: all 300ms; -o-transition: all 300ms; -moz-transition: all 300ms;}
+.fa-bars {display: none;}
+
+/*HEADER*****************************************/
+
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+#logo{
+    width: 260px;
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
+#logo:hover{
+    opacity: 0.5;
+}
+#logo img{
+    width: 100%;
+}
+header nav ul li:hover {
+    padding-top: 5px;
+}
+header nav{
+    float: right;
+    margin: 23px 20px 0px 10px;
+}
+header nav ul li{
+    float: left;
+    margin-left: 25px;
+}
+header nav ul li {
+    font-size: 21px;
+}
+
+/*BODY*************************************/
+
+body {
+    background: url(https://source.unsplash.com/random/3902×2682/?hacker);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*HOME*************************************/
+
+#home {
+    background: url(https://source.unsplash.com/random/3902×2682/?hacker);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#home h1 {
+    margin: 300px auto 0 auto;
+    font-size: 110px;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+#home h2 {
+    margin: 100 auto 0 auto;
+    font-size: 25px;
+    color: #000;
+    text-shadow: 0 0 5px white;
+}
+#home img{
+    width: 7%;
+    margin-top: 160px;
+    opacity: 0.7;
+}
+#home img:hover {
+    padding-top: 10px;
+
+}
+#homehr{
+    opacity: 0;
+}
+
+/*TOOLS********************************/
+
+#tools {
+    padding-top: 150px;
+    background: url(https://source.unsplash.com/random/3902×2682/?hacker);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#tool-box{
+    width: 300px;
+    margin: 0 auto 0 auto;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 2em;
+    background-color: #fff;
+}
+
+/*DOWNLOADS********************************/
+
+#downloads {
+    padding-top: 150px;
+    background: url(https://source.unsplash.com/random/3902×2682/?hacker);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#downloads img{
+    width: 20%;
+    margin-top: 15px;
+}
+#downloads a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #494949;
+    z-index: 1;
+    margin: 0px 40px 0px 0px;
+}
+#downloads img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,3);
+}
+#MBDD{
+    width: 400px;
+    margin: 0 auto 0 auto;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 2em;
+    background-color: #fff;
+}
+
+/*FUN STUFF**************************/
+
+#fun {
+    padding-top: 150px;
+    background: url(https://source.unsplash.com/random/3902×2682/?hacker);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*NEWS*******************************/
+
+#news {
+    padding-top: 150px;
+    background: url(https://source.unsplash.com/random/3902×2682/?hacker);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*SOCIAL*****************************/
+
+#social {
+    padding-top: 150px;
+    background: url(https://source.unsplash.com/random/3902×2682/?hacker);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*PRODUKTE***************************/
+
+#MBD{
+    width: 900px;
+    height: auto;
+    margin: 0 auto 0 auto;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 2em;
+    background-color: #fff;
+}
+#produkte{
+    background: url(https://source.unsplash.com/random/3902×2682/?hacker);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+#produkte h4{
+    text-align: left;
+}
+#psensor{
+    width: 400px;
+    float: left;
+}
+#prise{
+    width: 80px;
+    margin-right: 850px;
+    opacity: 0.7;
+}
+#sensorhr{
+    opacity: 0;
+    margin-top: 200px;
+}
+#produkthead{
+    text-shadow: 0 0 5px rgb(172, 172, 172);
+    text-align: left;
+    margin: 15px 0 0 150px;
+}
+#produkthead1{
+    text-shadow: 0 0 5px rgb(172, 172, 172);
+    text-align: left;
+    margin: 15px 0 0 150px;
+    font-size: 25px;
+}
+#preislabel{
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+#preisunder{
+    font-size: 10px;
+    margin: 3px  0 0 0;
+}
+#produktinfo{
+    margin: 0 0 0 0;
+}
+
+#produkte h3{
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    margin-top: 0px;
+}
+#infotext{
+    font-size: 12px;
+    text-align: left;
+    padding-left: 400px;
+    width: 400px;
+}
+
+#prise:hover{
+    opacity: 1;
+}
+
+/* MEDIA QUERIES *****************************************/
+
+/* TABLETS */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: auto;
+    }
+
+    #logo {
+        width: 100px;
+        margin-top: 5px;
+    }
+
+    header nav {
+        margin-top: 0;
+    }
+
+    header nav ul li {
+        font-size: 12px;
+        padding-top: 0;
+    }
+
+    #home h1 {
+        font-size: 90px;
+        margin-top: 200px;
+    }
+
+    #MBD {
+        width: 80%;
+    }
+
+    #infotext {
+        width: 35%;
+    }
+    
+    #MBDD{
+        width: 30%;
+    }
+
+    #contact {
+        width: 40%;
+    }
+
+    #botton {
+        width: 85%;
+    }
+}
+
+/* MOBILES */
+
+@media screen and (max-width: 549px) {
+
+    html, body {
+        width: 100%;
+    }
+
+    #logo {
+        width: 90px;
+        margin-left: 15px;
+    }
+
+    header nav {
+        margin: 0;
+        float:none;
+    }
+
+    .fa-bars {
+        display: inline-block;
+        width: 5%;
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        margin: 1% 2% 0 0;
+    }
+
+    .fa-bars:hover {
+        opacity: 0.5;
+    }
+
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .open {
+        height: auto;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        font-size: 11px;
+        border-top:  1px solid #dddddd;
+    }
+
+    header nav ul li:hover {
+        background-color: #eeeeee;
+    }
+
+    #homehr{
+        margin: 0;
+        padding: 0;
+    }
+
+    #home h1 {
+        font-size: 50px;
+        margin-top: 200px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #home h2 {
+        font-size: 20px;
+
+    }
+
+    #produkte h3 {
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    #MBD {
+        width: 100%;
+        padding-left: 5px;
+    }
+
+    #produkte {
+        padding: 50px;
+    }
+
+    #produkthead {
+        margin: 0 auto 0 auto;
+        text-align: center;
+        padding: 0 0 0 35%;
+    }
+
+    #MBD img {
+        width: 90%;
+        margin: 0 auto 0 auto;
+        padding: 0 0 0 3%;
+    }
+
+    #produkthead1 {
+        margin: 0 auto 0 auto;
+        font-size: 21px;
+        
+    }
+
+    #infotext {
+        padding: 0;
+        width: 100%;
+        font-size: 11px;
+    }
+
+    #prise {
+        height: 0;
+    }
+
+    #downloads h3 {
+        font-size: 25px;
+    }
+
+    #MBDD {
+        width: 67%;
+    }
+
+    #kontakt h3 {
+        font-size: 25px;
+    }
+
+    #contact {
+        width: 80%;
+    }
+    #home img{
+        width: 40%;
+        margin-top: 160px;
+        opacity: 1.0;
+    }
+    header{
+        width: 100%;
+    }
+}
