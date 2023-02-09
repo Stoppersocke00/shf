@@ -367,7 +367,7 @@ form input:first-child{
 
 /* TABLETS */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1040px) {
     header {
         height: auto;
     }
@@ -418,7 +418,7 @@ form input:first-child{
 
 /* MOBILES */
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 644px) {
 
     html, body {
         width: 100%;
