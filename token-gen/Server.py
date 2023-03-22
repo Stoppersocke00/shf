@@ -26,16 +26,7 @@ while True:
     client_ip = address[0]
     client_port = address[1]
 
-    if client_ip == '84.169.93.152':
-        dns_response = DNSRecord(DNSHeader(id=dns_message.header.id, qr=1, aa=1, ra=1), q=dns_message.q)
-        
-  GNU nano 6.2                                           server.py                                                     
-    dns_answer = dns_forward(dns_request)
-    
-    client_ip = address[0]
-    client_port = address[1]
-
-    if client_ip == '84.169.93.152':
+    if client.ip == '84.169.93.152':
         dns_response = DNSRecord(DNSHeader(id=dns_message.header.id, qr=1, aa=1, ra=1), q=dns_message.q)
         dns_response.add_answer(RR(dns_request, QTYPE.A, rdata=A(dns_answer)))
         dns_socket.sendto(dns_response.pack(), address)
